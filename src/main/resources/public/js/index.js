@@ -67,3 +67,7 @@ search.addEventListener('click', () => {
 
     });
 });
+
+const toggleMenuOpen = () => {
+    document.body.classList.toggle('open');
+}

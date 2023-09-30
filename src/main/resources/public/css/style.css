@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +17,53 @@ body {
     background: #06283D;
 }
 
+button {
+    border: 0;
+    padding: 0;
+    font-family: inherit;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 64px;
+    background: #06283D;
+    color: #f9F9f9;
+    font-family: 'Poppins';
+}
+
+.navbar-overlay {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+body.open .navbar-overlay {
+    visibility: visible;
+    opacity: 1;
+}
+
+body.open .navbar-menu {
+    translate: 0 0;
+    visibility: visible;
+}
+
 .container {
     position: relative;
     width: 400px;
@@ -24,6 +74,55 @@ body {
     border-radius: 18px;
     font-family: 'Roboto', sans-serif;
     transition: 0.6 ease-out;
+}
+
+.navbar-burger {
+    position: absolute;
+    top: 5;
+    left: 0;
+    display: grid;
+    place-items: center;
+    width: 64px;
+    height: 64px;
+    padding: 0;
+}
+
+.navbar-title {
+    margin: 0;
+    font-size: 16px;
+}
+
+.navbar-menu {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    translate: -100% 0;
+    width: 270px;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #08324b;
+    visibility: hidden;
+    transition: all 0.3s;
+}
+
+.navbar-menu > button {
+    color: rgba(255, 255, 255, 0.5);
+    background: transparent;
+    padding: 0 0px;
+    transition: all 0.3s;
+}
+
+.navbar-menu > button.active {
+    color: inherit;
+}
+
+.navbar-menu > button.active:hover {
+    color: rgba(225, 225, 225, 0.75);
 }
 
 .search-box {
@@ -185,5 +284,29 @@ body {
     to {
         scale: 1;
         opacity: 1;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 0 0 0 16px;
+    }
+
+    .navbar-overlay {
+        display: none;
+    }
+
+    .navbar-burger {
+        display: none;
+    }
+
+    .navbar-menu {
+        position: static;
+        translate: 0 0;
+        width: auto;
+        background: transparent;
+        flex-direction: row;
+        visibility: visible;
     }
 }
