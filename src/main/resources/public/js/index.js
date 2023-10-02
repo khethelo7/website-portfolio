@@ -71,3 +71,11 @@ search.addEventListener('click', () => {
 const toggleMenuOpen = () => {
     document.body.classList.toggle('open');
 }
+
+const redirect = (location) => {
+    const fullPagesPath = "pages/";
+    console.log("I reach here: "+location);
+
+    window.location.href = fullPagesPath + location + '.html';
+    
+};
