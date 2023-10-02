@@ -10,7 +10,7 @@
       rel="stylesheet">
       
     <link rel="stylesheet" href="../css/style.css">
-    <title>Home</title>
+    <title>Projects</title>
 </head>
 <body>
     <nav class="navbar">
@@ -22,11 +22,16 @@
 
         <h1 class="navbar-title">Projects</h1>
         <nav class="navbar-menu">
-            <button type="button" class="active" onclick="redirect('contact')">Contact</button>
-            <button type="button" class="active" onclick="redirect('home')">Home</button>
-            <button type="button" class="active" onclick="redirect('projects')">Projects</button>
+            <button type="button" class="active" onclick="contacts()">Contact</button>
+            <button type="button" class="active" onclick="home()">Home</button>
+            <button type="button" class="active" onclick="projects()">Projects</button>
         </nav>
     </nav>
+
+    <div class="container">
+        <a href="../projects/weather-app.html">WeatherApp</a>
+    </div>
+    
     <script src="../js/index.js"></script>
 </body>
 </html>

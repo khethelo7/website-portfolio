@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,28 +8,10 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Weather App</title>
 </head>
-    <!-- fonts.google.com/specimen/Poppins?query=poppins -->
 <body>
-
-    <nav class="navbar">
-        <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
-
-        <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
-            <span class="material-icons">menu</span>
-        </button>
-
-        <h1 class="navbar-title">Projects</h1>
-        <nav class="navbar-menu">
-            <button type="button" class="active" onclick="redirect('contact')">Contact</button>
-            <button type="button" class="active" onclick="redirect('home')">Home</button>
-            <button type="button" class="active" onclick="redirect('projects')">Projects</button>
-        </nav>
-    </nav>
-
     <div class="container">
         <div class="search-box">
             <i class="fa-solid fa-location-dot"></i>
@@ -67,8 +48,6 @@
         </div>
     </div>
 
-    <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
-    <script src="./js/index.js"></script>
+    <script src="weather-app.js"></script>
 </body>
-
 </html>

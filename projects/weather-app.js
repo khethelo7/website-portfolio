@@ -1,10 +1,10 @@
-const container = document.querySelector('.container');
 const search = document.querySelector('.search-box button');
-const weatherBox = document.querySelector('.weather-box');
-const weatherDetails = document.querySelector('.weather-details');
-const error404 = document.querySelector('.not-found');
 
 search.addEventListener('click', () => {
+    const container = document.querySelector('.container');
+    const weatherBox = document.querySelector('.weather-box');
+    const weatherDetails = document.querySelector('.weather-details');
+    const error404 = document.querySelector('.not-found');
     const APIKey = '697151b227d52fde4829f26796548424';
     const city = document.querySelector('.search-box input').value;
 
@@ -67,15 +67,3 @@ search.addEventListener('click', () => {
 
     });
 });
-
-const toggleMenuOpen = () => {
-    document.body.classList.toggle('open');
-}
-
-const redirect = (location) => {
-    const fullPagesPath = "pages/";
-    console.log("I reach here: "+location);
-
-    window.location.href = fullPagesPath + location + '.html';
-    
-};
