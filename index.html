@@ -9,6 +9,7 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <link rel="stylesheet" href="./css/style.css">
     <title>Khethelo Nkosi</title>
@@ -16,20 +17,70 @@
     <!-- fonts.google.com/specimen/Poppins?query=poppins -->
 <body>
 
-    <nav class="navbar">
-        <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
-
-        <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
-            <span class="material-icons">menu</span>
-        </button>
-
-        <h1 class="navbar-title">Home</h1>
-        <nav class="navbar-menu">
-            <button type="button" class="active" onclick="contacts()">Contact</button>
-            <button type="button" class="active" onclick="home()">Home</button>
-            <button type="button" class="active" onclick="projects()">Projects</button>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+    
+            <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
+                <span class="material-icons">menu</span>
+            </button>
+    
+            <h1 class="navbar-title">Home</h1>
+            <nav class="navbar-menu">
+                <button type="button" class="active" onclick="contacts()">Contact</button>
+                <button type="button" class="active" onclick="home()">Home</button>
+                <button type="button" class="active" onclick="projects()">Projects</button>
+            </nav>
         </nav>
-    </nav>
+    </header>
+
+
+    <main>
+        <aside class="main-content" id="dark-background">
+            <h3>Hey there, 👋</h3>
+            <p>I'm Khethelo, a passionate second year Software Engineering student at WeThinkCode_, driven by a deep curiosity for
+                technology and its transformative power.</p>
+            <br/>
+            <p>I believe in the potential of technology to solve real-world problems, and I'm dedicated to making a meaningful impact. My journey
+                involves constant learning and exploring new technologies to stay ahead in this dynamic field. I aspire to be a driving force in the
+                tech market, contributing innovative solutions and products that address pressing global challenges. My role model is Elon Musk,
+                whose relentless pursuit of groundbreaking ventures inspires me to dream big and reach for the stars.
+            </p>
+        </aside>
+
+        <aside class="main-content" id="dark-background">
+            <h3></h3>
+            <p>I am really proficient in the backend, here are a couple of technologies in my arsenal:</p>
+            <br>
+            <p> For the Back-End 😉</p>
+            <ul>
+                <li><p class="fa-brands fa-java"> Java</p></li>
+                <li><p class="fa-brands fa-python"> Python</p></li>
+                <li><p class="fa-brands fa-square-js"> JS</p></li>
+                <li><p class="fa-duotone fa-square-7">Borland Delphi</p></li>
+                <li>Dart</li>
+            </ul>
+            <br>
+            <p> For the Web 🚀</p>
+            <ul>
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+            </ul>
+            <br>
+            <p> Frameworks</p>
+            <ul>
+                <li>NEXT</li>
+                <li>Node.js</li>
+            </ul>
+        </aside>
+    </main>
+    
+
+    <footer>
+        <main>
+            <p>&copy; 2023 Simple Footer Widget. All Rights Reserved | Design by Khethelo Nkosi</p>
+        </main>
+    </footer>
 
     <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
     <script src="./js/index.js"></script>
